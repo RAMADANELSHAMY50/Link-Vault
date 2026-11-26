@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+/* =================================
+   LIGHT MODE
+================================= */
+
+:root,
+[data-theme="light"] {
+  color-scheme: light;
+
+  --lv-background: #ffffff;
+  --lv-sidebar: #f8fafc;
+  --lv-surface: #ffffff;
+  --lv-surface-secondary: #f1f5f9;
+
+  --lv-text: #0f172b;
+  --lv-text-secondary: #8193a6;
+
+  --lv-border: #e2e8f0;
+
+  --lv-accent: #ffd21e;
+  --lv-accent-hover: #fca317;
+
+  --lv-badge: #f1f5f9;
+}
+
+/* =================================
+   DARK MODE
+================================= */
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --lv-background: #020618;
+  --lv-sidebar: #0f172b;
+  --lv-surface: #0f172b;
+  --lv-surface-secondary: #172236;
+
+  --lv-text: #f1f5f9;
+  --lv-text-secondary: #8193a6;
+
+  --lv-border: #1d293d;
+
+  --lv-accent: #ffd21e;
+  --lv-accent-hover: #fca317;
+
+  --lv-badge: #1d293d;
+}
+
+/* =================================
+   TAILWIND DESIGN TOKENS
+================================= */
+
+@theme inline {
+  --color-background: var(--lv-background);
+  --color-sidebar: var(--lv-sidebar);
+  --color-surface: var(--lv-surface);
+  --color-surface-secondary: var(--lv-surface-secondary);
+
+  --color-text-primary: var(--lv-text);
+  --color-text-secondary: var(--lv-text-secondary);
+
+  --color-border: var(--lv-border);
+
+  --color-accent: var(--lv-accent);
+  --color-accent-hover: var(--lv-accent-hover);
+
+  --color-badge: var(--lv-badge);
+
+  --radius-card: 12px;
+  --radius-button: 8px;
+}
